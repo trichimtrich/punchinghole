@@ -24,7 +24,7 @@ else:
     print("[+] Client socket is random")
 
 sock.sendto(b"init", (HOST_IP, HOST_PORT))
-print("[+] Send init data")
+print("[+] Send init data to {}:{}".format(HOST_IP, HOST_PORT))
 print("[+] Receiving...")
 
 while True:
